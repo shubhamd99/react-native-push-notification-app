@@ -10,6 +10,7 @@ export default class App extends Component {
 		super(props);
 
 		this.state = {};
+		this.setupPushNotification = this.setupPushNotification.bind(this);
 	}
 
 	async componentDidMount() {
@@ -76,4 +77,24 @@ export default class App extends Component {
 			requestPermissions: true,
 		});
 	}
+}
+
+function testPush(notification) {
+	PushNotification.localNotification({
+		title: notification.title, // (optional)
+		message: notification.message, // (required)
+	});
+}
+
+function testCancel() {
+	PushNotification.cancelAllLocalNotifications();
+}
+
+function testScheduleNotification() {
+	PushNotification.localNotificationSchedule({
+		//... You can use all the options from localNotifications
+		message: "My First Notification", // (required)
+		date: new Date(Date.now() + 60 * 1000), // in 60 secs
+		allowWhileIdle: false, // (optional) set notification to work while on doze, default: false
+	});
 }
