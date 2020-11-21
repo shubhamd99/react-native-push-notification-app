@@ -34,3 +34,5 @@ b. Push Notifications capability
 ![alt text](https://i.imgur.com/MGdi8Pd.png)
 
 ![alt text](https://i.imgur.com/YOP1Q4J.png)
+
+![alt text](https://i.imgur.com/ad0mij4.png)

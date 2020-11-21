@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Alert } from 'react-native';
 
 import PushNotificationIOS from "@react-native-community/push-notification-ios";
 const PushNotification = require("react-native-push-notification");
+import messaging from '@react-native-firebase/messaging';
 
 export default class App extends Component {
 
@@ -14,7 +15,15 @@ export default class App extends Component {
 	}
 
 	async componentDidMount() {
+		this.checkPermission();
 		this.setupPushNotification();
+	}
+
+	async checkPermission() {
+		const enabled = await messaging().hasPermission();
+		console.log("ENABLED: ", enabled ? true : false)
+		if (enabled) {
+		}
 	}
 
 	render() {
@@ -36,6 +45,7 @@ export default class App extends Component {
 			// (required) Called when a remote is received or opened, or local notification is opened
 			onNotification: function (notification) {
 				console.log("NOTIFICATION:", notification);
+				Alert.alert(notification.title, notification.message);
 
 				// process the notification
 
