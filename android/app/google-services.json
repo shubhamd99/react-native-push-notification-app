@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "481330006243",
+    "firebase_url": "https://durable-jet-230615.firebaseio.com",
+    "project_id": "durable-jet-230615",
+    "storage_bucket": "durable-jet-230615.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481330006243:android:1aad7357cf9f52e41f5dd6",
+        "android_client_info": {
+          "package_name": "com.pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481330006243-0fsfh8gg2psjr59lka5dmm41lmop3eq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481330006243-rubr5oq0ff0mb3dqh6tp6molb8emoht8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
