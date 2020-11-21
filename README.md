@@ -28,3 +28,9 @@ npx react-native run-ios
 8. Add Capabilities for IOS
 a. Background Mode capability and tick Remote Notifications.
 b. Push Notifications capability
+
+9. Send Push Notification From Firebase
+
+![alt text](https://i.imgur.com/MGdi8Pd.png)
+
+![alt text](https://i.imgur.com/YOP1Q4J.png)
