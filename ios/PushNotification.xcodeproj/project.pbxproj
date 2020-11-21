@@ -59,6 +59,7 @@
 		2D02E4901E0B4A5D006451C7 /* PushNotification-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushNotification-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		485AE59A64C895BA32CD9BF5 /* Pods-PushNotification-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotification-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PushNotification-tvOS/Pods-PushNotification-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		541994EF25693AE600F6DFFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		541994F92569419700F6DFFA /* PushNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = PushNotification.entitlements; path = PushNotification/PushNotification.entitlements; sourceTree = "<group>"; };
 		5C501725D0D5E6BB842441BE /* libPods-PushNotification-PushNotificationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushNotification-PushNotificationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		620D9B1F65A4FF41828BF273 /* Pods-PushNotification-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotification-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PushNotification-tvOSTests/Pods-PushNotification-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6F5F8B100EAF943E09347994 /* libPods-PushNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushNotification.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +128,7 @@
 		13B07FAE1A68108700A75B9A /* PushNotification */ = {
 			isa = PBXGroup;
 			children = (
+				541994F92569419700F6DFFA /* PushNotification.entitlements */,
 				541994EF25693AE600F6DFFA /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -669,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PushNotification/PushNotification.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PushNotification/Info.plist;
@@ -692,6 +695,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PushNotification/PushNotification.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = PushNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
