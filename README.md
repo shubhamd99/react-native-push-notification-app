@@ -19,4 +19,4 @@ cd ..
 npx react-native run-ios
 ```
 
-5. Install Firebase Cloud Messaging Package - npm install --save @react-native-firebase/app
+5. Install Firebase Cloud Messaging Package - npm install --save @react-native-firebase/messaging
